@@ -21,7 +21,7 @@ export const bentoItems = [
     title: "E-Commerce Platform",
     description: "Modern shopping experience blending performance and design.",
     category: "Web Development",
-    image: "/src/assets/b5.png", // Main project image
+    image: "/assets/b5.png", // Main project image
     gridSpan: { col: 7, row: 2 }, // Spanning columns and rows
     link: "#",
     tags: ["React", "Node.js", "MongoDB", "Tailwind"]
@@ -48,7 +48,7 @@ export const bentoItems = [
     title: "AI Chatbot Interface",
     description: "Sleek UI/UX for natural language processing.",
     category: "UI/UX & AI",
-    image: "/src/assets/b16.jpg",
+    image: "/assets/b16.jpg",
     gridSpan: { col: 5, row: 2 },
     link: "#",
     tags: ["React", "Python", "NLP", "Figma"]
@@ -65,7 +65,7 @@ export const bentoItems = [
     id: 6,
     type: "image",
     title: "Visual Detail",
-    image: "/src/assets/b19.jpg", // Could be a zoomed-in detail or related graphic
+    image: "/assets/b19.jpg", // Could be a zoomed-in detail or related graphic
     gridSpan: { col: 4, row: 1 },
   },
   {
@@ -73,7 +73,7 @@ export const bentoItems = [
     type: "profile", // Example: Mini about/profile card
     title: "Alex - Creative Dev",
     description: "Focusing on interactive & performant web solutions.",
-    image: "/src/assets/profile-placeholder.png", // Placeholder for a profile pic
+    image: "/assets/profile-placeholder.png", // Placeholder for a profile pic
     gridSpan: { col: 4, row: 2 },
   },
 
