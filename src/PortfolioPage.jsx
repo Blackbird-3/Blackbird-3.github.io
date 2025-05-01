@@ -68,7 +68,7 @@ export default function PortfolioPage() {
       ScrollTrigger.getAll().forEach(t => t.kill()); // Kill any remaining triggers (safety net)
       gsap.killTweensOf(window); // Kill scroll-to tweens
     };
-  }, [sections]); // Run once on mount and when sections change
+  }, []); // Run once on mount
 
   // --- Smooth Scroll Function ---
     const scrollToSection = (sectionId) => {

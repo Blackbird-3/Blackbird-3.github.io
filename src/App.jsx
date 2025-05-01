@@ -1,11 +1,11 @@
 import React from 'react'
-
+import PortfolioPage from './PortfolioPage'
 
 function App() {
 
   return (
     <>
-      <h1>Shreshtth Kumar Agarwaal</h1>
+      <PortfolioPage />
     </>
   )
 }
