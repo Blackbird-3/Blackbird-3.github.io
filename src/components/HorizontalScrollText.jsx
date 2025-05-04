@@ -18,7 +18,7 @@ const HorizontalScrollText = ({ text }) => {
     const textWidth = textRef.current.offsetWidth / 2; // Width of one segment
 
     const anim = gsap.to(textRef.current, {
-      x: `-${textWidth}px`, // Move left by the width of one segment
+      x: `-${textWidth * 0.7}px`, // Move left by the width of one segment
       ease: "none",
       scrollTrigger: {
         trigger: containerRef.current, // Trigger based on the container
@@ -37,7 +37,7 @@ const HorizontalScrollText = ({ text }) => {
 
   return (
     <div ref={containerRef} className="relative h-32 overflow-hidden flex items-center bg-black"> {/* Ensure background */}
-      <div ref={textRef} className="horizontal-scroll-text whitespace-nowrap text-8xl font-bold text-red-500/10 py-4 will-change-transform">
+      <div ref={textRef} className="horizontal-scroll-text whitespace-nowrap text-8xl font-bold text-red-500/30 py-4 will-change-transform">
         {/* Initial text rendering handled by useEffect */}
         <span dangerouslySetInnerHTML={{ __html: text }}></span>
       </div>
@@ -45,7 +45,8 @@ const HorizontalScrollText = ({ text }) => {
           .horizontal-scroll-text {
               display: inline-block; /* Ensures width calculation is correct */
           }
-       `}</style>
+       `}
+       </style>
     </div>
   );
 };
