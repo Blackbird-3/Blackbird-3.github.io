@@ -386,7 +386,7 @@ const BentoCard = ({ item }) => {
             <div ref={addDecorRef} className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-red-500/40 rounded-full"></div>
             
             <Clock size={34} className="card-icon text-red-500 mb-5 opacity-70" />
-            <h3 className="text-element text-lg md:text-xl font-semibold mb-3">{title}</h3>
+            <h3 className="text-element text-lg md:text-xl font-semibold mb-3">{title} - Coming Soon</h3>
             <p className="text-element text-sm md:text-base text-gray-500">{description}</p>
           </div>
         );
